@@ -4,18 +4,17 @@ class FileConnectorPluginGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.1 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [:]
+    def dependsOn = ['database-migration':'1.1']
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
-    def title = "File Connector Plugin Plugin" // Headline display name of the plugin
-    def author = "Your name"
-    def authorEmail = ""
+    def title = "File Connector Plugin" // Headline display name of the plugin
+    def author = "Daniel Bower"
+    def authorEmail = "daniel.bower@infinum.com"
     def description = '''\
-Brief summary/description of the plugin.
+Connect to various File Storage Mechanisms
 '''
 
     // URL to the plugin's documentation
@@ -27,10 +26,10 @@ Brief summary/description of the plugin.
 //    def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
+    def organization = [ name: "Infinum", url: "http://infinum.com/" ]
 
     // Any additional developers beyond the author specified above.
-//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
+    def developers = [ [ name: "Alex Leader", email: "alexander.leader@infinum.net" ]]
 
     // Location of the plugin's issue tracker.
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
