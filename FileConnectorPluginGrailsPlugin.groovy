@@ -4,7 +4,8 @@ class FileConnectorPluginGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.1 > *"
     // the other plugins this plugin depends on
-    def dependsOn = ['database-migration':'1.1']
+	def dependsOn = [:]
+    //def dependsOn = ['database-migration':'1.1']
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"
