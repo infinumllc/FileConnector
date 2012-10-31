@@ -12,4 +12,8 @@ class ContentType implements Audited {
 		name blank: false, size: 5..150 
 		auditData nullable: false
 	}
+	
+	String toString(){
+		return name
+	}
 }
